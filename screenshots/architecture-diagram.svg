@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600" style="background:#0a0e17; font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,monospace;">
+  <defs>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1f2937" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Title & Header -->
+  <text x="40" y="45" fill="#38bdf8" font-size="20" font-weight="bold" letter-spacing="1">ARINC 839 MANAGER OF AIR-GROUND COMMUNICATIONS (MAGC)</text>
+  <text x="40" y="70" fill="#94a3b8" font-size="12">Multi-Bearer Policy Router • Dynamic Seamless Handover • RTCA DO-358A ATN/CPDLC Safety Shield</text>
+  <line x1="40" y1="85" x2="960" y2="85" stroke="#334155" stroke-width="1.5" />
+
+  <!-- AIRCRAFT AVIONICS DOMAIN (LEFT) -->
+  <rect x="40" y="110" width="410" height="440" rx="8" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.5" />
+  <rect x="40" y="110" width="410" height="35" rx="8" fill="#1e293b" />
+  <text x="60" y="133" fill="#38bdf8" font-size="14" font-weight="bold">AIRCRAFT AVIONICS &amp; MAGC ROUTER LRU</text>
+
+  <!-- Traffic Prioritizer -->
+  <rect x="65" y="165" width="360" height="85" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+  <text x="80" y="188" fill="#10b981" font-size="12" font-weight="bold">ARINC 839 Traffic Classification Engine</text>
+  <text x="80" y="210" fill="#e2e8f0" font-size="11">Priority 1: ATS (CPDLC / ADS-C) • Immediate Preemption</text>
+  <text x="80" y="230" fill="#94a3b8" font-size="10">Priority 2: AOC (OFP/Flight Ops) • Priority 3: AAC • Priority 4: APC</text>
+
+  <!-- Policy Routing & Handover -->
+  <rect x="65" y="265" width="360" height="95" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+  <text x="80" y="288" fill="#38bdf8" font-size="12" font-weight="bold">Dynamic Policy Router &amp; Handover Engine</text>
+  <text x="80" y="310" fill="#e2e8f0" font-size="11">Least-Cost Safety-First Matrix ($0/MB Gatelink at Gate)</text>
+  <text x="80" y="330" fill="#94a3b8" font-size="10">5.0s Hysteresis Anti-Flapping Filter • Lossless Session Migration</text>
+  <text x="80" y="348" fill="#94a3b8" font-size="10">Automatic Degradation Failover (Threshold SNR &lt; 8 dB)</text>
+
+  <!-- Multi-Bearer Transceiver Interfaces -->
+  <rect x="65" y="375" width="360" height="75" rx="6" fill="#0f172a" stroke="#a855f7" stroke-width="1" />
+  <text x="80" y="398" fill="#a855f7" font-size="12" font-weight="bold">Multi-Bearer Hardware Controllers</text>
+  <text x="80" y="420" fill="#94a3b8" font-size="10">Gatelink (842) • VDL Mode 2 (720/750) • SATCOM (781) • HFDL (753)</text>
+  <text x="80" y="438" fill="#94a3b8" font-size="10">Cellular 5G (760) • ACARS / ATN framing over IP / OSI</text>
+
+  <!-- ARINC 429 Discrete Bus -->
+  <rect x="65" y="465" width="360" height="65" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+  <text x="80" y="488" fill="#94a3b8" font-size="11" font-weight="bold">ARINC 429 Cockpit Bus Output (Bit 32 Odd Parity)</text>
+  <text x="80" y="508" fill="#38bdf8" font-size="10" font-family="monospace">Label 271: MAGC Status &amp; Active Bearers • Label 272: Link SNR &amp; Q</text>
+
+  <!-- RF BEARERS & TRANSMISSION MEDIUM (CENTER) -->
+  <g transform="translate(450, 110)">
+    <!-- Connection lines -->
+    <path d="M 0,97 L 100,60" stroke="#10b981" stroke-width="2" stroke-dasharray="6,4" />
+    <path d="M 0,200 L 100,160" stroke="#38bdf8" stroke-width="2" stroke-dasharray="6,4" />
+    <path d="M 0,280 L 100,260" stroke="#a855f7" stroke-width="2" stroke-dasharray="6,4" />
+    <path d="M 0,360 L 100,360" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6,4" />
+
+    <!-- Center Badge -->
+    <rect x="10" y="140" width="80" height="150" rx="6" fill="#0284c7" opacity="0.9" filter="url(#glow)" />
+    <text x="50" y="170" fill="#ffffff" font-size="11" font-weight="bold" text-anchor="middle">AIR-GROUND</text>
+    <text x="50" y="188" fill="#ffffff" font-size="11" font-weight="bold" text-anchor="middle">BEARERS</text>
+    <text x="50" y="210" fill="#ffffff" font-size="9" text-anchor="middle">Gatelink 5GHz</text>
+    <text x="50" y="228" fill="#ffffff" font-size="9" text-anchor="middle">VDL Mode 2</text>
+    <text x="50" y="246" fill="#ffffff" font-size="9" text-anchor="middle">SATCOM SBB</text>
+    <text x="50" y="264" fill="#ffffff" font-size="9" text-anchor="middle">HFDL Polar</text>
+    <text x="50" y="280" fill="#ffffff" font-size="8" text-anchor="middle">Ramp 5G</text>
+  </g>
+
+  <!-- GROUND NETWORK DOMAIN (RIGHT) -->
+  <rect x="550" y="110" width="410" height="440" rx="8" fill="url(#cardGrad)" stroke="#10b981" stroke-width="1.5" />
+  <rect x="550" y="110" width="410" height="35" rx="8" fill="#1e293b" />
+  <text x="570" y="133" fill="#10b981" font-size="14" font-weight="bold">GROUND INFRASTRUCTURE &amp; ATS / AOC ENTITIES</text>
+
+  <!-- Air Traffic Services (ATS / ATC) -->
+  <rect x="575" y="165" width="360" height="85" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+  <text x="590" y="188" fill="#10b981" font-size="12" font-weight="bold">Air Traffic Services (ATS Ground Router)</text>
+  <text x="590" y="210" fill="#f8fafc" font-size="11">CPDLC En-Route Clearances &amp; ADS-C Position Reports</text>
+  <text x="590" y="230" fill="#94a3b8" font-size="10">ATN / IPS &amp; FANS 1/A Over VDL2 / SATCOM • RTCA DO-358A</text>
+
+  <!-- Airline Operational Control (AOC) -->
+  <rect x="575" y="265" width="360" height="85" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+  <text x="590" y="288" fill="#38bdf8" font-size="12" font-weight="bold">Airline Operations Center (AOC Ground Server)</text>
+  <text x="590" y="310" fill="#f8fafc" font-size="11">Operational Flight Plans (OFP), Weather &amp; Fuel Uplink</text>
+  <text x="590" y="330" fill="#94a3b8" font-size="10">Least-Cost Delivery • Automatic Ingestion &amp; Manifest Storage</text>
+
+  <!-- Airport Gate & Surface Services -->
+  <rect x="575" y="365" width="360" height="85" rx="6" fill="#0f172a" stroke="#a855f7" stroke-width="1" />
+  <text x="590" y="388" fill="#a855f7" font-size="12" font-weight="bold">Airport Gatelink Ground Gateway (ARINC 842)</text>
+  <text x="590" y="410" fill="#f8fafc" font-size="11">Terminal Gate AP Stanchion &amp; 5G Private Surface APN</text>
+  <text x="590" y="430" fill="#94a3b8" font-size="10">Zero-Cost Gigabit Data Offload • EAP-TLS / IPsec Tunnel</text>
+
+  <!-- FAA AC 20-140C Compliance -->
+  <rect x="575" y="465" width="360" height="65" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+  <text x="590" y="488" fill="#f59e0b" font-size="11" font-weight="bold">FAA AC 20-140C Data Link Audit Trail</text>
+  <text x="590" y="508" fill="#94a3b8" font-size="10">Immutable Flight Event Forensics • Handover Timing Logs</text>
+
+  <!-- Footer Banner -->
+  <text x="500" y="575" fill="#64748b" font-size="11" text-anchor="middle">ARINC839Forge Pro v1.0.0 • Compliant with ARINC Project Paper 839, RTCA DO-358A, RTCA DO-219 &amp; FAA AC 20-140C</text>
+</svg>

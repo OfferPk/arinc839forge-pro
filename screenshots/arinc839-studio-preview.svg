@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600" style="background:#0a0e17; font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,monospace;">
+  <rect width="1000" height="600" fill="#0a0e17" />
+  
+  <!-- Header Bar -->
+  <rect x="0" y="0" width="1000" height="50" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+  <text x="25" y="32" fill="#38bdf8" font-size="16" font-weight="bold">ARINC839Forge Pro v1.0.0</text>
+  <text x="240" y="32" fill="#64748b" font-size="12">| Manager of Air-Ground Communications (MAGC) Studio</text>
+  
+  <rect x="740" y="12" width="235" height="26" rx="13" fill="#064e3b" stroke="#10b981" stroke-width="1" />
+  <circle cx="758" cy="25" r="5" fill="#10b981" />
+  <text x="773" y="29" fill="#10b981" font-size="11" font-weight="bold">MULTI-LINK POLICY ROUTER ONLINE</text>
+
+  <!-- Left Column: Flight Phase & Traffic -->
+  <rect x="25" y="70" width="280" height="250" rx="8" fill="#111827" stroke="#334155" stroke-width="1" />
+  <text x="45" y="98" fill="#38bdf8" font-size="13" font-weight="bold">FLIGHT PHASE &amp; ROUTING</text>
+  
+  <text x="45" y="130" fill="#f8fafc" font-size="12">Phase:</text>
+  <text x="160" y="130" fill="#10b981" font-size="12" font-weight="bold">CRUISE CONTINENTAL</text>
+  
+  <text x="45" y="160" fill="#f8fafc" font-size="12">Policy Mode:</text>
+  <text x="160" y="160" fill="#38bdf8" font-size="11" font-weight="bold">LEAST COST / SAFETY</text>
+
+  <text x="45" y="190" fill="#f8fafc" font-size="12">Active ATS Route:</text>
+  <text x="160" y="190" fill="#10b981" font-size="12" font-weight="bold">VDL_MODE_2 (350ms)</text>
+
+  <text x="45" y="220" fill="#f8fafc" font-size="12">Active AOC Route:</text>
+  <text x="160" y="220" fill="#38bdf8" font-size="12" font-weight="bold">VDL_MODE_2 ($120/MB)</text>
+
+  <rect x="45" y="250" width="240" height="40" rx="4" fill="#0284c7" />
+  <text x="165" y="275" fill="#ffffff" font-size="12" font-weight="bold" text-anchor="middle">5.0s HYSTERESIS LOCKED</text>
+
+  <rect x="25" y="335" width="280" height="240" rx="8" fill="#111827" stroke="#334155" stroke-width="1" />
+  <text x="45" y="362" fill="#38bdf8" font-size="13" font-weight="bold">PHYSICAL BEARER METRICS</text>
+
+  <text x="45" y="395" fill="#94a3b8" font-size="11">Gatelink 5GHz:</text>
+  <text x="210" y="395" fill="#ef4444" font-size="11" font-weight="bold">INHIBITED</text>
+
+  <text x="45" y="425" fill="#94a3b8" font-size="11">VDL Mode 2 (VHF):</text>
+  <text x="210" y="425" fill="#10b981" font-size="11" font-weight="bold">ACTIVE (24dB)</text>
+
+  <text x="45" y="455" fill="#94a3b8" font-size="11">SATCOM Aero (SBB):</text>
+  <text x="210" y="455" fill="#38bdf8" font-size="11" font-weight="bold">STANDBY (19dB)</text>
+
+  <text x="45" y="485" fill="#94a3b8" font-size="11">HFDL Polar Link:</text>
+  <text x="210" y="485" fill="#94a3b8" font-size="11" font-weight="bold">STANDBY (12dB)</text>
+
+  <text x="45" y="515" fill="#94a3b8" font-size="11">Cellular Ramp (5G):</text>
+  <text x="210" y="515" fill="#ef4444" font-size="11" font-weight="bold">INHIBITED</text>
+
+  <!-- Center Column: Multi-Link Radar Topology -->
+  <rect x="325" y="70" width="370" height="250" rx="8" fill="#030712" stroke="#1f2937" stroke-width="1" />
+  <text x="345" y="98" fill="#38bdf8" font-size="13" font-weight="bold">MULTI-LINK AIR-GROUND TOPOLOGY</text>
+
+  <!-- Nodes & Rays -->
+  <circle cx="510" cy="140" r="10" fill="#38bdf8" />
+  <text x="470" y="165" fill="#f8fafc" font-size="10">B787 (N839AG)</text>
+
+  <path d="M 510 140 L 400 240" stroke="#10b981" stroke-width="2" stroke-dasharray="6,4" />
+  <rect x="390" y="240" width="20" height="20" fill="#10b981" />
+  <text x="370" y="275" fill="#94a3b8" font-size="10">VDL2 GS</text>
+
+  <circle cx="630" cy="120" r="12" fill="#a855f7" />
+  <text x="600" y="148" fill="#94a3b8" font-size="10">SATCOM ORBIT</text>
+
+  <rect x="340" y="285" width="340" height="24" rx="4" fill="#1e293b" />
+  <text x="510" y="301" fill="#94a3b8" font-size="10" text-anchor="middle">Airborne Link Active • Frequency: 136.975 MHz • D8PSK Modulation</text>
+
+  <!-- Center Bottom: Packet Dispatcher & Queue -->
+  <rect x="325" y="335" width="370" height="240" rx="8" fill="#111827" stroke="#334155" stroke-width="1" />
+  <text x="345" y="362" fill="#38bdf8" font-size="13" font-weight="bold">TRAFFIC ROUTING DISPATCHER &amp; EVENT LOG</text>
+
+  <rect x="345" y="375" width="160" height="32" rx="4" fill="#059669" />
+  <text x="425" y="396" fill="#ffffff" font-size="11" font-weight="bold" text-anchor="middle">ATS CPDLC (Preempt)</text>
+
+  <rect x="515" y="375" width="160" height="32" rx="4" fill="#334155" />
+  <text x="595" y="396" fill="#ffffff" font-size="11" font-weight="bold" text-anchor="middle">AOC OFP Fuel Plan</text>
+
+  <rect x="345" y="420" width="330" height="135" rx="4" fill="#090d16" stroke="#1e293b" />
+  <text x="355" y="440" fill="#38bdf8" font-size="10" font-family="monospace">[07:35:01 UTC] MAGC LRU online. Initializing multi-bearer sync.</text>
+  <text x="355" y="460" fill="#10b981" font-size="10" font-family="monospace">[07:35:04 UTC] Phase: CRUISE_CONTINENTAL. ATS -&gt; VDL_MODE_2.</text>
+  <text x="355" y="480" fill="#38bdf8" font-size="10" font-family="monospace">[07:35:06 UTC] Dispatched ATS CPDLC via VDL2 (Latency: 350ms).</text>
+  <text x="355" y="500" fill="#f59e0b" font-size="10" font-family="monospace">[07:35:08 UTC] AOC Flight Plan enqueued and routed via VDL2.</text>
+  <text x="355" y="520" fill="#10b981" font-size="10" font-family="monospace">[07:35:10 UTC] Standby SATCOM ready for oceanic transition.</text>
+  <text x="355" y="540" fill="#94a3b8" font-size="10" font-family="monospace">[07:35:12 UTC] Parity verification on Labels 271/272 confirmed.</text>
+
+  <!-- Right Column: ARINC 429 & Auditor -->
+  <rect x="715" y="70" width="260" height="250" rx="8" fill="#111827" stroke="#334155" stroke-width="1" />
+  <text x="735" y="98" fill="#38bdf8" font-size="13" font-weight="bold">ARINC 429 COCKPIT BUS</text>
+
+  <text x="735" y="130" fill="#94a3b8" font-size="11">Label 271 (MAGC Multi-Link Status):</text>
+  <rect x="735" y="140" width="220" height="32" rx="4" fill="#0f172a" stroke="#1e293b" />
+  <text x="745" y="161" fill="#38bdf8" font-size="11" font-family="monospace">0x83B408B9 [ODD OK]</text>
+
+  <text x="735" y="195" fill="#94a3b8" font-size="11">Label 272 (Active Link SNR &amp; Q):</text>
+  <rect x="735" y="205" width="220" height="32" rx="4" fill="#0f172a" stroke="#1e293b" />
+  <text x="745" y="226" fill="#38bdf8" font-size="11" font-family="monospace">0x811800BA [ODD OK]</text>
+
+  <rect x="735" y="255" width="220" height="40" rx="4" fill="#1e293b" />
+  <text x="845" y="280" fill="#10b981" font-size="11" font-weight="bold" text-anchor="middle">BIT 32 ODD PARITY VALID</text>
+
+  <!-- Right Bottom: 10-Point Normative Auditor -->
+  <rect x="715" y="335" width="260" height="240" rx="8" fill="#111827" stroke="#334155" stroke-width="1" />
+  <text x="735" y="362" fill="#38bdf8" font-size="13" font-weight="bold">10-POINT NORMATIVE AUDIT</text>
+
+  <text x="735" y="395" fill="#94a3b8" font-size="11">NORMATIVE SCORE:</text>
+  <text x="735" y="415" fill="#10b981" font-size="14" font-weight="bold">10 / 10 CHECKS PASSED (100%)</text>
+
+  <text x="735" y="445" fill="#94a3b8" font-size="11">CERTIFICATION STATUS:</text>
+  <text x="735" y="465" fill="#38bdf8" font-size="11" font-weight="bold">ARINC 839 MAGC CERTIFIED</text>
+
+  <text x="735" y="495" fill="#94a3b8" font-size="11">REGULATORY CONFORMANCE:</text>
+  <text x="735" y="515" fill="#f8fafc" font-size="10">RTCA DO-358A • RTCA DO-219</text>
+  <text x="735" y="530" fill="#f8fafc" font-size="10">FAA AC 20-140C • ICAO Annex 10</text>
+
+  <rect x="735" y="542" width="220" height="22" rx="3" fill="#064e3b" />
+  <text x="845" y="557" fill="#10b981" font-size="10" font-weight="bold" text-anchor="middle">AUDIT VERIFIED &amp; COMPLIANT</text>
+</svg>
